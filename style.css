@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fondo negro */
+    color: #FFFFFF; /* ✅ Texto blanco */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FFFF00; /* Header amarillo sólido */
+    color: #000000; /* Texto negro en el header para contraste */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: inherit; /* Hereda color del header */
+}
+
+.hero-image {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex; 
+    justify-content: center; 
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    background-color: rgba(255, 255, 0, 0.3); /* Amarillo transparente */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.areas-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cloud-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; 
+}
+
+.cloud-box {
+    background-color: rgba(255, 255, 0, 0.3); /* Fondo amarillo transparente */
+    border-radius: 50%; 
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #FFFFFF; /* ✅ Texto blanco dentro de la nube */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cloud-box:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 0, 0.5); /* Más intenso al pasar el mouse */
+}
+
+.cloud-box img {
+    width: 60px; /* Más pequeño */
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 0, 0.3); /* Fondo amarillo transparente */
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.cloud-box:hover img {
+    transform: scale(1.1);
+}
+
+.cloud-box span {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.cloud-box:hover span {
+    color: #3498db; /* Azul al pasar el mouse */
+}
+
+.detail-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 0, 0.3); /* ✅ Fondo amarillo transparente */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    color: #FFFFFF; /* ✅ Texto blanco dentro del cuadro de detalle */
+}
+
+.detail-page h2 {
+    color: #FFFFFF; /* ✅ Texto blanco para subtítulos */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.detail-page p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.detail-page ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.detail-page ul li {
+    margin-bottom: 8px;
+}
+
+.detail-page img {
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 0, 0.3); /* Fondo amarillo transparente */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
